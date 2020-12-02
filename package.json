@@ -12,7 +12,7 @@
     "lib"
   ],
   "scripts": {
-    "start": "npm run build && concurrently 'npm run build -- -w' 'patternplate start'",
+    "start": "patternplate start",
     "build": "tsc",
     "build:components": "patternplate build --out=.tmp --base=/",
     "clean": "rm -rf lib/patterns",
@@ -46,20 +46,23 @@
     "semantic-release": "^15.13.2",
     "surge": "^0.20.1",
     "typescript": "^3.0.3",
-    "yargs-parser": "^11.1.1"
-  },
-  "dependencies": {
-    "@emotion/core": "^10.0.6",
-    "@emotion/styled": "^10.0.6",
+    "yargs-parser": "^11.1.1",
+    "tslib": "^2.0.3",
     "@types/node": "^8.0.53",
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.7",
-    "@types/react-helmet": "^5.0.7",
+    "@types/react-helmet": "^5.0.7"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.6",
     "prop-types": "^15.6.2",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-feather": "^1.1.0",
-    "react-helmet": "^5.2.0",
-    "tslib": "^1.7.0"
+    "react-helmet": "^5.2.0"
+  },
+  "resolutions": {
+    "./node_modules/@types/react": "16.7.17",
+    "./node_modules/@types/react-dom": "16.0.11"
   }
 }

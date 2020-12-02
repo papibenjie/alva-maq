@@ -1,7 +1,0 @@
-{
-	"name": "checkbox",
-	"displayName": "Checkbox",
-	"version": "1.0.0",
-	"tags": ["atoms", "checkbox"],
-	"flag": "alpha"
-}
