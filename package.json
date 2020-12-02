@@ -18,7 +18,7 @@
     "clean": "rm -rf lib/patterns",
     "clean-build": "npm run clean && npm run build",
     "commit": "commit",
-    "commitmsg": "commitlint -e $GIT_PARAMS"
+    "commitmsg": "commitlint -e $HUSKY_GIT_PARAMS"
   },
   "repository": {
     "type": "git",
